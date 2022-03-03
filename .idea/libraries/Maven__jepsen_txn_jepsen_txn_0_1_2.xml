@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: jepsen.txn:jepsen.txn:0.1.2">
+    <CLASSES>
+      <root url="jar://D:/Maven-Local-Repository/jepsen/txn/jepsen.txn/0.1.2/jepsen.txn-0.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Maven-Local-Repository/jepsen/txn/jepsen.txn/0.1.2/jepsen.txn-0.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Maven-Local-Repository/jepsen/txn/jepsen.txn/0.1.2/jepsen.txn-0.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

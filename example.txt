@@ -1,0 +1,6 @@
+10.160.92.215	tv6-mdbstore-vurtualmachine-03
+10.160.92.217	tv6-mdbstore-vurtualmachine-01
+10.160.92.218	tv6-mdbstore-vurtualmachine-02
+10.160.92.219	tv6-mdbstore-vurtualmachine-05
+10.160.92.220   tv6-mdbstore-vurtualmachine-06
+

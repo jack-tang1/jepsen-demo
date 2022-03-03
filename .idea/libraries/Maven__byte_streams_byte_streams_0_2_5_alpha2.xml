@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: byte-streams:byte-streams:0.2.5-alpha2">
+    <CLASSES>
+      <root url="jar://D:/Maven-Local-Repository/byte-streams/byte-streams/0.2.5-alpha2/byte-streams-0.2.5-alpha2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Maven-Local-Repository/byte-streams/byte-streams/0.2.5-alpha2/byte-streams-0.2.5-alpha2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Maven-Local-Repository/byte-streams/byte-streams/0.2.5-alpha2/byte-streams-0.2.5-alpha2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
