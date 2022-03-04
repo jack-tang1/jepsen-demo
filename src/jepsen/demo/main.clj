@@ -3,6 +3,7 @@
   (:require [clojure.java.io]
             [clj-http.client :as client]
             [clojure.set :as set]))
+;(import jepsen.demo.com.jack.Hello)
 
 ;(defn example []
   ;(.exists (file "Example.txt")))
@@ -155,6 +156,44 @@
   (println @counter)
   (shutdown-agents))
 
+(defn watchDemo []
+  (def x (atom 0))
+  (add-watch x :watcher
+             (fn [key atom old-state new-state]
+               (println "the value of the atom has been changed")
+               (println "old state" old-state)
+               (println "new state" new-state)))
+  (reset! x 2)
+  (remove-watch x :watcher)
+  (reset! x 4))
+
+(defn macroDemo []
+  (defmacro Simple1 [args]
+    (list 2 args))
+  (println (macroexpand '(Simple1 2))))
+
+(defn refDemo []
+  (def my-ref (ref 10 :validator pos?))
+  (dosync (ref-set my-ref 2))
+  (println @my-ref))
+
+(defn refDemo1 []
+  (def my-ref (ref []))
+  (defn add [arg]
+    (dosync (alter my-ref conj arg)))
+  (add "jack")
+  (add "bob")
+  (println @my-ref))
+
+(def mysql-db {:dbtype "mysql"
+               :dbname "clojure_test"
+               :user "clojure_test"
+               :password "clojure_test"})
+
+;(defn javaDemo []
+;  (let [hello (Hello.)]
+;    (println (.sayHello hello "jack"))))
+
 (defn -main
   [& arglist]
-  (agentDemo))
+  (javaDemo))
